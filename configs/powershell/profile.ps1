@@ -7,20 +7,23 @@ Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 
 Import-Module Terminal-Icons
 
+Enable-PowerType
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin -PredictionViewStyle ListView
+
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zylo.omp.json" | Invoke-Expression
 
-Set-Alias lt tree
-Set-Alias ll ls
-Set-Alias l ls
-Set-Alias nf New-Item -Force
-Set-Alias nd mkdir
-Set-Alias rm Remove-Item -Force -Recurse
-Set-Alias rd Remove-Item -Force -Recurse
-Set-Alias vim nvim
-Set-Alias c Clear-Host
-Set-Alias g git
+Set-Alias lt "tree"
+Set-Alias ll "ls"
+Set-Alias l "ls"
+Set-Alias nf "New-Item -ItemType File -Force"
+Set-Alias nd "New-Item -ItemType Directory -Force"
+Set-Alias rm "Remove-Item -Force -Recurse"
+Set-Alias rd "Remove-Item -Force -Recurse"
+Set-Alias vim "nvim"
+Set-Alias c "Clear-Host"
+Set-Alias g "git"
 
 function search {
     param(

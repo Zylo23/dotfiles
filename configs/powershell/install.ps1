@@ -38,9 +38,22 @@ if (-not $ProfilePath) {
 }
 Write-Log "PowerShell profile located at $ProfilePath." "SUCCESS"
 
+# Check winget
+Write-Log "Checking winget..." "INFO"
+$winget = Get-Command -Name winget -ErrorAction SilentlyContinue
+if (-not $winget) {
+    Write-Log "winget not found, installing..." "INFO"
+    Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+    Write-Log "winget installed." "SUCCESS"
+}
+else {
+    Write-Log "winget found." "SUCCESS"
+}
+
 # Install PowerShell Modules
 try {
     Write-Log "Installing PSFzf module..." "INFO"
+    winget install fzf
     Install-Module -Name PSFzf -Scope CurrentUser -Force
     Write-Log "PSFzf module installed." "SUCCESS"
 }
@@ -64,6 +77,15 @@ try {
 }
 catch {
     Write-Log "Failed to install Terminal-Icons module: $_" "ERROR"
+}
+
+try {
+    Write-Log "Installing PowerType module..." "INFO"
+    Install-Module PowerType -AllowPrerelease -Force
+    Write-Log "PowerType module installed." "SUCCESS"
+}
+catch {
+    Write-Log "Failed to install PowerType module: $_" "ERROR"
 }
 
 # Install Oh-My-Posh
