@@ -2,6 +2,10 @@
 
 Welcome to Zylo dotfiles! This repository contains various configuration files and scripts to set up customized terminal and PowerShell environments. Please read through the instructions and warnings before proceeding.
 
+<div align="center">
+    <img src=".github/assets//image.png" alt="Zylo dotfiles">
+</div>
+
 > [!WARNING]
 > Use caution when installing or modifying these configurations, especially if you are not familiar with the tools and technologies involved. Incorrect configurations could affect your system's performance or functionality.
 
