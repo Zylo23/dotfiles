@@ -32,16 +32,19 @@ Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 Oh-My-Posh can be installed using different package managers. Choose your preferred package manager and follow the corresponding instructions:
 
 - **winget**
+
   ```powershell
   winget install JanDeDobbeleer.OhMyPosh -s winget
   ```
 
 - **scoop**
+
   ```powershell
   scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
   ```
 
 - **chocolatey**
+
   ```powershell
   choco install oh-my-posh
   ```
