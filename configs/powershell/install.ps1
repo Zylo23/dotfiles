@@ -38,22 +38,29 @@ if (-not $ProfilePath) {
 }
 Write-Log "PowerShell profile located at $ProfilePath." "SUCCESS"
 
-# Check winget
-Write-Log "Checking winget..." "INFO"
-$winget = Get-Command -Name winget -ErrorAction SilentlyContinue
-if (-not $winget) {
-    Write-Log "winget not found, installing..." "INFO"
-    Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-    Write-Log "winget installed." "SUCCESS"
+# Check chocolatey
+Write-Log "Checking chocolatey..." "INFO"
+$chocolatey = Get-Command -Name choco -ErrorAction SilentlyContinue
+if (-not $chocolatey) {
+    Write-Log "Chocolatey not found, installing..." "INFO"
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.C.org/install.ps1'))
+
+    $chocolatey = Get-Command -Name choco -ErrorAction SilentlyContinue
+    if (-not $chocolatey) {
+        Write-Log "Chocolatey not found after install." "ERROR"
+        exit 1
+    }
+    Write-Log "Chocolatey installed." "SUCCESS"
 }
 else {
-    Write-Log "winget found." "SUCCESS"
+    Write-Log "Chocolatey already installed." "SUCCESS"
 }
 
 # Install PowerShell Modules
 try {
     Write-Log "Installing PSFzf module..." "INFO"
-    winget install fzf
+    Start-Process pwsh -Verb runAs -ArgumentList "-Command choco install fzf -y -f" -Wait
     Install-Module -Name PSFzf -Scope CurrentUser -Force
     Write-Log "PSFzf module installed." "SUCCESS"
 }
@@ -91,8 +98,7 @@ catch {
 # Install Oh-My-Posh
 try {
     Write-Log "Setting execution policy and installing Oh-My-Posh..." "INFO"
-    Set-ExecutionPolicy Bypass -Scope Process -Force
-    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
+    Start-Process pwsh -Verb runAs -ArgumentList "-Command choco install oh-my-posh -y -f" -Wait
     Write-Log "Oh-My-Posh installed." "SUCCESS"
 }
 catch {
@@ -138,3 +144,8 @@ catch {
 
 # Log completion
 Write-Log "Script execution completed." "INFO"
+Write-Log "You should now have a customized PowerShell terminal with enhanced features and a stylish prompt after restarting PowerShell." "SUCCESS"
+
+# Restart PowerShell
+Write-Log "Restarting PowerShell..." "INFO"
+Start-Process pwsh -NoNewWindow -Wait
