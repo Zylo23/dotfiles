@@ -3,28 +3,13 @@
 Welcome to Zylo dotfiles! This repository contains various configuration files and scripts to set up customized terminal and PowerShell environments. Please read through the instructions and warnings before proceeding.
 
 <div align="center">
-    <img src=".github/assets/terminal.png" alt="Windows Terminal" />
     <table>
         <tr>
             <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/userstyles/styles/instagram/preview.webp" alt="Instagram" />
+                <img src="https://raw.githubusercontent.com/Zylo23/dotfiles/main/.github/assets/terminal.png" alt="Windows Terminal" />
             </td>
             <td>
                 <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/vscode/assets/preview.webp" alt="VS Code" />
-            </td>
-            <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/userstyles/styles/youtube/preview.webp" alt="YouTube" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/userstyles/styles/proton/preview.webp" alt="Proton" />
-            </td>
-            <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/userstyles/styles/github/preview.webp" alt="GitHub" />
-            </td>
-            <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/userstyles/styles/chatgpt/preview.webp" alt="ChatGPT" />
             </td>
         </tr>
     </table>
@@ -38,6 +23,7 @@ Welcome to Zylo dotfiles! This repository contains various configuration files a
 - [Powershell](configs/powershell)
 - [Terminal](configs/terminal)
 - [VS Code](configs/vscode)
+- [Discord](configs/discord)
 - [User Styles](https://github.com/Zylo23/Everblush)
 
 ## Requirements
@@ -69,6 +55,16 @@ To use the VS Code configuration, you need:
 - **Npm**: Required for building the theme extension (or other package managers).
 
 Refer to [VS Code README](configs/vscode) for detailed installation instructions.
+
+### Discord Configuration
+
+In discord configuration it just a theme for discord.
+
+- [Discord](https://discord.com/): Required, Because it is a discord client.
+- [Vencord](https://vencord.dev/) or [BetterDiscord](https://betterdiscord.app/): Required for installing the theme, If you use Discord in the desktop.
+- [Stylus](https://github.com/openstyles/stylus): Required for installing the theme, If you use Discord in the browser.
+
+Refer to [Discord README](configs/discord) for detailed installation instructions.
 
 ### User Styles
 
