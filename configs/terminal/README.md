@@ -21,7 +21,7 @@ The `schemes.json` file contains the color scheme definitions for your terminal.
   "purple": "#c47fd5",
   "cyan": "#6cbfbf",
   "white": "#b3b9b8",
-  "brightBlack": "#2d3437",
+  "brightBlack": "#5c6268", // But I edit this color for more contrast
   "brightRed": "#ef7e7e",
   "brightGreen": "#96d988",
   "brightYellow": "#f4d67a",
