@@ -1,15 +1,15 @@
-# Zylo dotfiles
+# ファース dotfiles
 
-Welcome to Zylo dotfiles! This repository contains various configuration files and scripts to set up customized terminal and PowerShell environments. Please read through the instructions and warnings before proceeding.
+Welcome to ファース dotfiles! This repository contains various configuration files and scripts to set up customized terminal and PowerShell environments. Please read through the instructions and warnings before proceeding.
 
 <div align="center">
     <table>
         <tr>
             <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/dotfiles/main/.github/assets/terminal.png" alt="Windows Terminal" />
+                <img src="https://raw.githubusercontent.com/pyyupsk/dotfiles/main/.github/assets/terminal.png" alt="Windows Terminal" />
             </td>
             <td>
-                <img src="https://raw.githubusercontent.com/Zylo23/Everblush/main/vscode/assets/preview.webp" alt="VS Code" />
+                <img src="https://raw.githubusercontent.com/pyyupsk/Everblush/main/vscode/assets/preview.webp" alt="VS Code" />
             </td>
         </tr>
     </table>
@@ -24,7 +24,7 @@ Welcome to Zylo dotfiles! This repository contains various configuration files a
 - [Terminal](configs/terminal)
 - [VS Code](configs/vscode)
 - [Discord](configs/discord)
-- [User Styles](https://github.com/Zylo23/Everblush)
+- [User Styles](https://github.com/pyyupsk/Everblush)
 
 ## Requirements
 
@@ -72,7 +72,7 @@ User styles are used to customize the user interface of websites. They are usual
 
 - [Stylus](https://github.com/openstyles/stylus): Required for installing the theme.
 
-Refer to [User Styles README](https://github.com/Zylo23/Everblush/tree/main/userstyles/styles) for detailed installation instructions.
+Refer to [User Styles README](https://github.com/pyyupsk/Everblush/tree/main/userstyles/styles) for detailed installation instructions.
 
 ## How to Use
 
@@ -84,4 +84,4 @@ Feel free to customize the configuration files to suit your preferences. If you 
 
 ---
 
-For any questions or feedback, you can reach out to [Zylo23](https://github.com/Zylo23).
+For any questions or feedback, you can reach out to [pyyupsk](https://github.com/pyyupsk).

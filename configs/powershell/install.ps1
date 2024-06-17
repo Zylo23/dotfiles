@@ -106,7 +106,7 @@ catch {
 }
 
 # Write the profile
-$profileScript = "https://github.com/Zylo23/dotfiles/raw/main/configs/powershell/profile.ps1"
+$profileScript = "https://github.com/pyyupsk/dotfiles/raw/main/configs/powershell/profile.ps1"
 try {
     Write-Log "Downloading profile script from $profileScript..." "INFO"
     Invoke-WebRequest -Uri $profileScript -OutFile $ProfilePath -UseBasicParsing
@@ -118,7 +118,7 @@ catch {
 
 # Find Oh-My-Posh theme
 Write-Log "Checking Oh-My-Posh theme path..." "INFO"
-$themePath = "$env:POSH_THEMES_PATH\zylo.omp.json"
+$themePath = "$env:POSH_THEMES_PATH\pyyupsk.omp.json"
 if (-not (Test-Path -Path $env:POSH_THEMES_PATH)) {
     try {
         Write-Log "Theme path not found, creating new theme path..." "INFO"
@@ -132,7 +132,7 @@ if (-not (Test-Path -Path $env:POSH_THEMES_PATH)) {
 Write-Log "Theme path located at $env:POSH_THEMES_PATH." "SUCCESS"
 
 # Write Oh-My-Posh style
-$themeScript = "https://github.com/Zylo23/dotfiles/raw/main/configs/powershell/zylo.omp.json"
+$themeScript = "https://github.com/pyyupsk/dotfiles/raw/main/configs/powershell/pyyupsk.omp.json"
 try {
     Write-Log "Downloading theme script from $themeScript..." "INFO"
     Invoke-WebRequest -Uri $themeScript -OutFile $themePath -UseBasicParsing

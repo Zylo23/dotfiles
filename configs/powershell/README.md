@@ -7,7 +7,7 @@ This directory contains the necessary configuration files and scripts to set up 
 - [install.ps1](install.ps1): Automated installation script.
 - [manual-installation.md](manual-installation.md): Manual installation guide.
 - [profile.ps1](profile.ps1): PowerShell profile script.
-- [zylo.omp.json](zylo.omp.json): Oh-My-Posh theme configuration.
+- [pyyupsk.omp.json](pyyupsk.omp.json): Oh-My-Posh theme configuration.
 
 ## Automated Installation
 
@@ -46,7 +46,7 @@ If you prefer to manually install and configure your PowerShell environment, fol
    Install-Module -Name Terminal-Icons -Repository PSGallery -Force
    ```
 3. **Install Oh-My-Posh** using a package manager of your choice (winget, scoop, chocolatey) or manually.
-4. **Configure your PowerShell profile** with the settings from `profile.ps1` and set up the Oh-My-Posh theme using `zylo.omp.json`.
+4. **Configure your PowerShell profile** with the settings from `profile.ps1` and set up the Oh-My-Posh theme using `pyyupsk.omp.json`.
 
 For detailed instructions, refer to [manual-installation.md](manual-installation.md).
 
@@ -60,10 +60,10 @@ The `profile.ps1` script contains custom aliases, functions, and module imports 
 - Functions for searching the web, navigating to your workspace, updating Oh-My-Posh, and more.
 - Initialization of Oh-My-Posh with the custom theme.
 
-### zylo.omp.json
+### pyyupsk.omp.json
 
 This is the theme configuration file for Oh-My-Posh. It defines the appearance of your PowerShell prompt, including colors, icons, and layout.
 
 ## Customization
 
-Feel free to customize `profile.ps1` and `zylo.omp.json` to suit your preferences. You can modify aliases, functions, and theme settings to create a personalized PowerShell environment.
+Feel free to customize `profile.ps1` and `pyyupsk.omp.json` to suit your preferences. You can modify aliases, functions, and theme settings to create a personalized PowerShell environment.

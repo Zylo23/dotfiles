@@ -60,10 +60,10 @@ Oh-My-Posh can be installed using different package managers. Choose your prefer
 Now, configure your PowerShell profile with the necessary settings. First, download the configuration files from the provided links.
 
 - **PowerShell Profile Script**:
-  [profile.ps1](https://github.com/Zylo23/dotfiles/blob/main/configs/powershell/profile.ps1)
+  [profile.ps1](https://github.com/pyyupsk/dotfiles/blob/main/configs/powershell/profile.ps1)
 
 - **Oh-My-Posh Theme File**:
-  [zylo.omp.json](https://github.com/Zylo23/dotfiles/blob/main/configs/powershell/zylo.omp.json)
+  [pyyupsk.omp.json](https://github.com/pyyupsk/dotfiles/blob/main/configs/powershell/pyyupsk.omp.json)
 
 ### Add Configuration to Your PowerShell Profile
 
@@ -75,10 +75,10 @@ Now, configure your PowerShell profile with the necessary settings. First, downl
 
 2. Copy the contents of the `profile.ps1` file from the GitHub link and paste them into your PowerShell profile script.
 
-3. Set the path for the Oh-My-Posh theme file. Add the following line to your PowerShell profile script, replacing `$themePath` with the path where you saved the `zylo.omp.json` file:
+3. Set the path for the Oh-My-Posh theme file. Add the following line to your PowerShell profile script, replacing `$themePath` with the path where you saved the `pyyupsk.omp.json` file:
 
    ```powershell
-   $themePath = "$env:POSH_THEMES_PATH\zylo.omp.json"
+   $themePath = "$env:POSH_THEMES_PATH\pyyupsk.omp.json"
    ```
 
 4. Save and close the PowerShell profile script.

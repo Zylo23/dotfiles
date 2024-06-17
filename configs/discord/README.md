@@ -21,11 +21,11 @@ You have three methods to import custom CSS:
 **Method 1: Using the Themes Folder**
 
 1. Click on the "Open Themes Folder" button.
-2. Paste the `everblush.theme.css` file into the opened folder. This file can be found in the [`configs/discord`](https://github.com/Zylo23/dotfiles/tree/main/configs/discord) directory of this repository.
+2. Paste the `everblush.theme.css` file into the opened folder. This file can be found in the [`configs/discord`](https://github.com/pyyupsk/dotfiles/tree/main/configs/discord) directory of this repository.
 
 **Method 2: Using Quick Edit CSS**
 
-1. Open the [`configs/discord/everblush.theme.css`](https://github.com/Zylo23/dotfiles/blob/main/configs/discord/everblush.theme.css) file.
+1. Open the [`configs/discord/everblush.theme.css`](https://github.com/pyyupsk/dotfiles/blob/main/configs/discord/everblush.theme.css) file.
 2. Copy the contents of the file.
 3. Paste the copied contents into the Quick Edit CSS box in Vencord.
 
@@ -34,7 +34,7 @@ You have three methods to import custom CSS:
 **Method 3: Using Online Themes**
 
 1. Copy the URL of the raw `everblush.theme.css` file from the GitHub repository.
-   - URL: `https://raw.githubusercontent.com/Zylo23/dotfiles/main/configs/discord/everblush.theme.css`
+   - URL: `https://raw.githubusercontent.com/pyyupsk/dotfiles/main/configs/discord/everblush.theme.css`
 2. Paste the copied URL into the "Online Themes" box in Vencord.
 
 ## Using Custom CSS with BetterDiscord
@@ -45,7 +45,7 @@ To use custom CSS with BetterDiscord, follow these steps:
 
 1. **Install BetterDiscord**: Follow the instructions on the [BetterDiscord Installation Guide](https://docs.betterdiscord.app/users/getting-started/installation) to install BetterDiscord.
 2. **Download the Theme File**: Download the `everblush.theme.css` file from the GitHub repository.
-   - URL: `https://github.com/Zylo23/dotfiles/blob/main/configs/discord/everblush.theme.css`
+   - URL: `https://github.com/pyyupsk/dotfiles/blob/main/configs/discord/everblush.theme.css`
 3. **Move the Theme File**: Move the downloaded `everblush.theme.css` file to the BetterDiscord themes folder:
    - Path: `%appdata%\betterdiscord\themes`
 
@@ -54,7 +54,7 @@ To use custom CSS with BetterDiscord, follow these steps:
 To use custom CSS with Stylus, follow these steps:
 
 1. **Install Stylus**: Install the Stylus browser extension from [GitHub](https://github.com/openstyles/stylus?tab=readme-ov-file#releases).
-2. **Open Userstyles**: Visit the [Everblush Stylus styles for Discord](https://github.com/Zylo23/Everblush/tree/main/userstyles/styles/discord) repository.
+2. **Open Userstyles**: Visit the [Everblush Stylus styles for Discord](https://github.com/pyyupsk/Everblush/tree/main/userstyles/styles/discord) repository.
 3. **Install the Style**:
    - Click on the Stylus Install badge to install the Everblush Discord style.
 

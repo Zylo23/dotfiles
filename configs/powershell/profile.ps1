@@ -12,7 +12,7 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin -PredictionViewStyle Lis
 
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zylo.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pyyupsk.omp.json" | Invoke-Expression
 
 Set-Alias lt "tree"
 Set-Alias ll "ls"

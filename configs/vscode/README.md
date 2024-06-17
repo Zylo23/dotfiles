@@ -44,17 +44,17 @@ Here is the content of your `settings.json` file:
 
 My custom theme, "Everblush Theme," is available in the following repository:
 
-[Everblush Theme](https://github.com/Zylo23/Everblush/tree/main/vscode)
+[Everblush Theme](https://github.com/pyyupsk/Everblush/tree/main/vscode)
 
 To install and use the theme, follow these steps:
 
 1. **Build from Source**:
 
-   1. Navigate to the [Everblush Theme repository](https://github.com/Zylo23/Everblush/tree/main/vscode).
+   1. Navigate to the [Everblush Theme repository](https://github.com/pyyupsk/Everblush/tree/main/vscode).
    2. Clone this repository to your computer.
 
    ```bash
-   git clone https://github.com/Zylo23/Everblush.git
+   git clone https://github.com/pyyupsk/Everblush.git
    ```
 
    3. Navigate to the `vscode` directory.
